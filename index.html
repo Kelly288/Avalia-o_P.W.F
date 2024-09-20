@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+    <div class="topo">
+        <div class="topoint">
+            <div class="topoleft">
+                <ul>
+                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#">Anuncie aqui</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="toporight">
+
+                <form action="pagina_de_busca.html" method="GET">
+                    <input type="image" src="assets/images/search.png" width="26" height="26" alt="Buscar">
+                    <input type="text" name="busca" class="topobusca" placeholder="Pesquisar ...">
+
+                </form>
+                
+                <a href="#"><img src="assets/images/facebook.png" alt="Facebook" width="26" height="26"></a>
+                <a href="#"><img src="assets/images/google-plus.png" alt="Google Plus" width="26" height="26"></a>
+                <a href="#"><img src="assets/images/linkedin.png" alt="LinkedIn" width="26" height="26"></a>
+                <a href="#"><img src="assets/images/deviantart.png" alt="DeviantArt" width="26" height="26"></a>
+                <a href="#"><img src="assets/images/twitter.png" alt="Twitter" width="26" height="26"></a>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="menuint">
+            <img src="assets/images/menu.png" alt="menu" width="40" height="40" class="menumobile" onclick="toggleMenu()">
+
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Economia</a></li>
+                <li>
+                    <a href="#">Entretenimento</a>
+                    <img src="assets/images/arrowdown.png" width="10" alt="Seta para baixo">
+                    <div class="submenu">
+                        <a href="#"><div class="submenuitem">Rock In Rio</div></a>
+                        <a href="#"><div class="submenuitem">Novelas</div></a>
+                        <a href="#"><div class="submenuitem">Estrelas da Casa</div></a>
+                        <a href="#"><div class="submenuitem">Tudo Mais</div></a>
+                        <a href="#"><div class="submenuitem">Moda e Beleza</div></a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Esportes</a>
+                    <img src="assets/images/arrowdown.png" width="10" alt="Seta para baixo">
+                    <div class="submenu">
+                        <a href="#"><div class="submenuitem">Competições</div></a>
+                        <a href="#"><div class="submenuitem">Resultados</div></a>
+                        <a href="#"><div class="submenuitem">Notícias do Club</div></a>
+                    </div>
+                </li>
+                <li><a href="#">Geral</a></li>
+                <li>
+                    <a href="#">Notícias</a>
+                    <img src="assets/images/arrowdown.png" width="10" alt="Seta para baixo">
+                    <div class="submenu">
+                        <a href="#"><div class="submenuitem">Podcasts</div></a>
+                        <a href="#"><div class="submenuitem">Vídeos</div></a>
+                        <a href="#"><div class="submenuitem">Especial publicitário</div></a>
+                        <a href="#"><div class="submenuitem">Blogs e Colunas</div></a>
+
+                    </div>
+                </li>
+                <li><a href="#">Polícia</a></li>
+                <li><a href="#">Vídeos</a></li>
+            </ul>
+        <div id="botoes-container">
+            <button onclick="alternarContraste()">Modo contraste</button>
+            <button onclick="aumentarFonte()">Aumentar Fonte</button>
+            <button onclick="diminuirFonte()">Diminuir Fonte</button>
+        </div>  
+        </div>
+    </div>
+        
+    <div class="ultimasnoticias">
+        <div class="ultimasnoticiasint">
+            <div class="ultnoticiasarea">
+                <div class="ultnoticiastitulo">Últimas Notícias</div>
+                <div class="ultnoticiasnoticia">Jovens estudantes de Desenvolvimento de Sistemas tiveram um pequeno portal de notícias como avaliação dos seus professores...</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="containerint">
+            <div class="leftside">
+                <div class="slideshow" id="slideshow">
+                    <div class="slide_bolinhas">
+                        <div class="bolinha" onclick="mudarSlide(0)"></div>
+                        <div class="bolinha" onclick="mudarSlide(1)"></div>
+                        <div class="bolinha" onclick="mudarSlide(2)"></div>
+                        <div class="bolinha" onclick="mudarSlide(3)"></div>
+                    </div>
+
+                    <div class="slideshow_area">
+                        <div class="slide" style="background-image: url('assets/images/noticia.jpg');">
+                            <div class="slide_info">
+                                <div class="slide_info_titulo">Dois corpos são encontrados nos rios Verde em MS</div>
+                                <div class="slide_info_subtitulo">Segundo o Corpo de Bombeiros, o primeiro era um homem e o segundo uma mulher...</div>
+                            </div>
+                        </div>
+                        <div class="slide" style="background-image: url('assets/images/noticia1.jpg');">
+                            <div class="slide_info">
+                                <div class="slide_info_titulo">Whatsapp não notifica mensagens no Android</div>
+                                <div class="slide_info_subtitulo">Isso pode indicar um problema com o aplicativo ou com o dispositivo. A seguir, veja...</div>
+                            </div>
+                        </div>
+                        <div class="slide" style="background-image: url('assets/images/noticia2.jpg');">
+                            <div class="slide_info">
+                                <div class="slide_info_titulo">Rodrygo, do Real Madrid, rebate “fake news” de programa de TV</div>
+                                <div class="slide_info_subtitulo">Atacante se pronunciou por meio de sua assessoria de imprensa nesta terça-feira (17)</div>
+                            </div>
+                        </div>
+                        <div class="slide" style="background-image: url('assets/images/noticia3.jpg');">
+                            <div class="slide_info">
+                                <div class="slide_info_titulo">Vice de Trump admite 'criar histórias' ao comentar fake news anti-imigração</div>
+                                <div class="slide_info_subtitulo">...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <div class="widget_titulo">Notícias</div>
+                    <div class="widget_conteudo">
+                        <div class="noticiaarea1">
+                            <div class="noticiaitem noticiabig">
+                                <div class="noticiaimg">
+                                    <img src="https://cidadeverde.com/cdn-cgi/image/fit=cover,g=top,q=80,f=auto,width=380,height=310/https://cidadeverde.com//assets/uploads/noticias/00d23ff2da942abd79ce2b9a40720d1a.jpg" width="80" height="80" alt="Notícia 1">
+                                </div>
+                                <div class="noticiatitulo">'Piauiense faz tatuagem de "cadeirada" de Datena em Marçal</div>
+                                <div class="noticiainfo">"Fiz a tatuagem para tirar onda, aproveitar o momento do meme, para resenhar, e acabou indo mais longe do que eu pensava", relatou.</div>
+                            </div>
+                        </div>
+
+                        <div class="noticiaarea2">
+                            <div class="noticiaitem">
+                                <div class="noticiaimg">
+                                    <img src="assets/images/volei.jpg" width="80" height="80" alt="Vôlei">
+                                </div>
+                                <div class="noticiatitulo">Teresina receberá Brasileiro de vôlei de praia</div>
+                                <div class="noticiainfo">Teresina vai receber a 7ª etapa do Circuito Brasileiro de vôlei de praia entre os dias 25 a 29 de setembro.</div>
+                            </div>
+
+                            <div class="noticiaitem">
+                                <div class="noticiaimg">
+                                    <img src="assets/images/Solatio.jpg" width="80" height="80" alt="Notícia 2">
+                                </div>
+                                <div class="noticiatitulo">Com baixas, CAP finaliza treinos para enfrentar Piauí</div>
+                                <div class="noticiainfo">A equipe do Atlético Piauiense encerrou na tarde desta terça-feira (17) a preparação para o jogo contra o Piauí.</div>
+                            </div>
+
+                            <div class="noticiaitem">
+                                <div class="noticiaimg">
+                                    <img src="assets/images/eclips.jpg" width="80" height="80" alt="Notícia 3">
+                                </div>
+                                <div class="noticiatitulo">Eclipse parcial da Lua acontece nesta terça (17)</div>
+                                <div class="noticiainfo">Eclipse parcial da Lua acontece nesta terça-feira (17) e será visível em todo o Brasil.</div>
+                            </div>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <div class="widget_titulo">Notícias</div>
+                    <div class="widget_conteudo">
+                        <div class="noticiaarea1">
+                            <div class="noticiaitem noticiabig">
+                                <div class="noticiaimg">
+                                    <img src="assets/images/SOS.jpg" width="80" height="80" alt="SOS">
+                                </div>
+                                <div class="noticiatitulo">Os marinheiros resgatados de ilha após escreverem 'socorro' na praia</div>
+                                <div class="noticiainfo">Três homens foram resgatados pela Guarda Costeira dos Estados Unidos em uma ilha na Micronésia depois de escreverem “HELP” ("socorro", em inglês) na areia usando folhas de palmeira.</div>
+                            </div>
+                        </div>
+
+                        <div class="noticiaarea2">
+                            <div class="noticiaitem">
+                                <div class="noticiaimg">
+                                    <img src="assets/images/avião.jfif" width="80" height="80" alt="Avião">
+                                </div>
+                                <div class="noticiatitulo">Por que os EUA apreenderam um avião oficial usado por Maduro?</div>
+                                <div class="noticiainfo">Autoridades dos Estados Unidos confiscaram um avião utilizado pelo presidente da Venezuela. A aeronave...</div>
+                            </div>
+
+                            <div class="noticiaitem">
+                                <div class="noticiaimg">
+                                    <img src="assets/images/aeronave.jfif" width="80" height="80" alt="Aeronave">
+                                </div>
+                                <div class="noticiatitulo">Piloto de avião que caiu em Teresina informou “perda de hélice em voo”</div>
+                                <div class="noticiainfo">O neurocirurgião que pilotou o avião que caiu em Teresina (PI), nesse domingo (8/9), informou...</div>
+                            </div>
+
+                            <div class="noticiaitem">
+                                <div class="noticiaimg">
+                                    <img src="assets/images/Israel.avif" width="80" height="80" alt="Israel">
+                                </div>
+                                <div class="noticiatitulo">Pagers: atacado no Líbano, Hezbollah ameaça retaliação contra Israel</div>
+                                <div class="noticiainfo">De acordo com um comunicado do Hezbollah, diversos dispositivos eletrônicos utilizados por membros do grupo xiita explodiram por volta de 15h30 (horário local).</div>
+                            </div>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightside">
+                <div class="widget">
+                    
+                    <div class="widget_titulo" style="width: 270px">Social</div>
+                    <div class="widget_conteudo">
+                        <a href="#"><img src="assets/images/facebook.png" width="26" height="26" alt="Facebook"></a>
+                        <a href="#"><img src="assets/images/google-plus.png" width="26" height="26" alt="Google Plus"></a>
+                        <a href="#"><img src="assets/images/linkedin.png" width="26" height="26" alt="LinkedIn"></a>
+                        <a href="#"><img src="assets/images/deviantart.png" width="26" height="26" alt="DeviantArt"></a>
+                        <a href="#"><img src="assets/images/twitter.png" width="26" height="26" alt="Twitter"></a>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <div class="widget_titulo">Últimas Notícias</div>
+                    <div class="widget_conteudo">
+                        <div class="noticia_item">
+                            <a href="#">Neste sábado (14/09), um casal foi flagrado em um assalto a um prédio de luxo no Leblon, Zona Sul do Rio de Janeiro. As câmeras de segurança dos apartamentos capturaram os dois suspeitos invadindo as residências. Com informações do.</a>
+                        </div>
+                        <div class="noticia_item">
+                            <a href="#">A dona de salão de beleza Suelen Côrrea de Paula, de 41 anos, morreu depois de tentar impedir o marido de reagir a um assalto em Manaus, no Amazonas. Com informações do R7.</a>
+                        </div>
+                        <div class="noticia_item">
+                            <a href="#">Um torcedor que cometeu atos racistas contra Vinícius Júnior nas redes sociais enfrentará sanções. As publicações foram encaminhadas ao Ministério Público da Espanha por se configurarem como crime de ódio. Com informações do Metrópoles.</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <div class="widget_titulo">Publicidade</div>
+                    <div class="widget_conteudo">
+                        <img src="assets/images/banner.jpg" width="273" alt="Banner Publicitário">
+                    </div>
+                </div>
+
+                <div class="widget">
+					<div class="widget_titulo">Encontre-nos no Facebook</div>
+					<div class="widget_conteudo">
+						<iframe src="assets/images/face.png" width="273" height="154" style="border:none"></iframe>
+					</div>
+				</div>	
+                		
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Portal de Notícias - Todos os direitos reservados.<p>
+    </footer>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
